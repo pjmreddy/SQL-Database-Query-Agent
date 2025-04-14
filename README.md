@@ -1,4 +1,4 @@
-# 🔍 SQL Database Query Assistant
+# 🔍 SQL Database Query Agent
 
 ✨ A powerful SQL query Agent that transforms natural language into SQL queries using LangChain and Groq's LLM. Interact with your databases conversationally!
 

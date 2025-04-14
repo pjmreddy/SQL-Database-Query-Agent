@@ -1,6 +1,6 @@
 import streamlit as st
 from pathlib import Path
-from langchain.agents import create_sql_agent
+from langchain_community.agent_toolkits.sql.base import create_sql_agent
 from langchain.agents.agent_types import AgentType
 from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 from langchain_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit

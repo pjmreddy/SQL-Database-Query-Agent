@@ -1,6 +1,10 @@
+ 
 # 🔍 SQL Database Query Agent
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sql-database-query-agent.streamlit.app/)
+
 ✨ A powerful SQL query Agent that transforms natural language into SQL queries using LangChain and Groq's LLM. Interact with your databases conversationally!
+
 
 ![Demo](output/Landing.png)
 

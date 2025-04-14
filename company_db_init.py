@@ -13,7 +13,6 @@ def initialize_company_database():
     connection = sqlite3.connect(db_path)
     cursor = connection.cursor()
     
-
     cursor.execute("""
     CREATE TABLE EMPLOYEES(
         EMPLOYEE_ID INTEGER PRIMARY KEY,
@@ -27,7 +26,6 @@ def initialize_company_database():
     )
     """)
     
-
     cursor.execute("""
     CREATE TABLE DEPARTMENTS(
         DEPARTMENT_ID INTEGER PRIMARY KEY,
@@ -38,7 +36,6 @@ def initialize_company_database():
     )
     """)
     
-
     cursor.execute("""
     CREATE TABLE PROJECTS(
         PROJECT_ID INTEGER PRIMARY KEY,
@@ -51,7 +48,6 @@ def initialize_company_database():
     )
     """)
     
-
     cursor.execute("""
     CREATE TABLE CLIENTS(
         CLIENT_ID INTEGER PRIMARY KEY,
@@ -64,7 +60,6 @@ def initialize_company_database():
     )
     """)
     
-
     cursor.execute("""
     CREATE TABLE INVENTORY(
         ITEM_ID INTEGER PRIMARY KEY,
@@ -77,7 +72,6 @@ def initialize_company_database():
     )
     """)
     
-
     employees_data = [
         (1, "John", "Smith", "john.smith@company.com", "555-1234", 1, "Software Engineer", 85000.00),
         (2, "Sarah", "Johnson", "sarah.j@company.com", "555-2345", 1, "Senior Developer", 95000.00),
@@ -93,7 +87,7 @@ def initialize_company_database():
             employee
         )
     
-
+    # Insert sample data for DEPARTMENTS
     departments_data = [
         (1, "Engineering", "Building A, Floor 2", 2, 1500000.00),
         (2, "Marketing", "Building B, Floor 1", 3, 750000.00),
@@ -108,6 +102,7 @@ def initialize_company_database():
             department
         )
     
+    # Insert sample data for PROJECTS
     projects_data = [
         (1, "Website Redesign", "2023-01-15", "2023-06-30", 120000.00, 1, "Completed"),
         (2, "Mobile App Development", "2023-03-01", "2023-09-30", 200000.00, 1, "In Progress"),
@@ -123,6 +118,7 @@ def initialize_company_database():
             project
         )
     
+    # Insert sample data for CLIENTS
     clients_data = [
         (1, "TechCorp Inc.", "Robert Chen", "r.chen@techcorp.com", "555-7890", "123 Tech Blvd, San Francisco, CA", "Technology"),
         (2, "Global Retail Ltd.", "Amanda Lewis", "a.lewis@globalretail.com", "555-8901", "456 Market St, New York, NY", "Retail"),
@@ -137,6 +133,7 @@ def initialize_company_database():
             client
         )
     
+    # Insert sample data for INVENTORY
     inventory_data = [
         (1, "Laptop", "Electronics", 25, 1200.00, "TechSuppliers Inc.", "2023-03-15"),
         (2, "Office Desk", "Furniture", 15, 350.00, "Office Furnishings Ltd.", "2023-02-10"),
@@ -153,6 +150,7 @@ def initialize_company_database():
             item
         )
     
+    # Commit changes and close connection
     connection.commit()
     connection.close()
     

@@ -24,6 +24,10 @@
 - `company_db_init.py`: Database initialization script
 - `requirements.txt`: Project dependencies
 
+## Live Demo
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sql-database-query-agent.streamlit.app/)
+
 ## ⚙️ Setup & Installation
 
 1️⃣ Install dependencies:

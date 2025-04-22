@@ -15,7 +15,7 @@
 - 🎨 Interactive chat interface with streaming responses
 - 📝 Persistent chat history for continuous conversations
 - ⚡ Real-time results with Groq's ultra-fast LLM
-- 🔄 Supports both local and remote database connections
+- 🔄 Supports both local and remote database connections  
 
 ## Project Structure
 
